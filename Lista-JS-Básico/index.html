@@ -139,30 +139,30 @@
         <button class="btn-nav" onclick="mostrarQuestao('q4', this)">Q4 - Cálculo de Desconto</button>
         <button class="btn-nav" onclick="mostrarQuestao('q5', this)">Q5 - Situação Final do Estudante</button>
         <button class="btn-nav" onclick="mostrarQuestao('q6', this)">Q6 - Controle de Acesso</button>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+        <button class="btn-nav" onclick="mostrarQuestao('q7', this)">Q7 - Classificação de Consumo</button>
+        <button class="btn-nav" onclick="mostrarQuestao('q8', this)">Q8 - Validação de Senha</button>
+        <button class="btn-nav" onclick="mostrarQuestao('q9', this)">Q9 - Cálculo de Frete</button>
+        <button class="btn-nav" onclick="mostrarQuestao('q10', this)">Q10 - Conversão de Temperatura</button>
+        <button class="btn-nav" onclick="mostrarQuestao('q11', this)">Q11 - Controle de Estoque</button>
+        <button class="btn-nav" onclick="mostrarQuestao('q12', this)">Q12 - Votação Eletrônica</button>
+        <button class="btn-nav" onclick="mostrarQuestao('q13', this)">Q13 - Avaliação do Cliente</button>
+        <button class="btn-nav" onclick="mostrarQuestao('q14', this)">Q14 - Desconto Salarial</button>
+        <button class="btn-nav" onclick="mostrarQuestao('q15', this)">Q15 - Controle de Velocidade</button>
+        <button class="btn-nav" onclick="mostrarQuestao('q16', this)">Q16 - Frequência Escolar</button>
+        <button class="btn-nav" onclick="mostrarQuestao('q17', this)">Q17 - Nível de Pontuação</button>
+        <button class="btn-nav" onclick="mostrarQuestao('q18', this)">Q18 - Campo Obrigatório</button>
+        <button class="btn-nav" onclick="mostrarQuestao('q19', this)">Q19 - Cálculo de Idade</button>
+        <button class="btn-nav" onclick="mostrarQuestao('q20', this)">Q20 - Semáforo Virtual</button>
+        <button class="btn-nav" onclick="mostrarQuestao('q21', this)">Q21 - Modo Claro / Escuro</button>
+        <button class="btn-nav" onclick="mostrarQuestao('q22', this)">Q22 - Saudação por Período</button>
+        <button class="btn-nav" onclick="mostrarQuestao('q23', this)">Q23 - Cálculo de IMC</button>
+        <button class="btn-nav" onclick="mostrarQuestao('q24', this)">Q24 - Horário da Biblioteca</button>
+        <button class="btn-nav" onclick="mostrarQuestao('q25', this)">Q25 - Média e Situação</button>
+        <button class="btn-nav" onclick="mostrarQuestao('q26', this)">Q26 - Total da Compra e Frete</button>
+        <button class="btn-nav" onclick="mostrarQuestao('q27', this)">Q27 - Nível de Bateria</button>
+        <button class="btn-nav" onclick="mostrarQuestao('q28', this)">Q28 - Validação de Inscrição</button>
+        <button class="btn-nav" onclick="mostrarQuestao('q29', this)">Q29 - Status de Estoque</button>
+        <button class="btn-nav" onclick="mostrarQuestao('q30', this)">Q30 - Análise de Crédito</button>
     </nav>
 
     <!-- Área Principal -->
@@ -260,6 +260,309 @@
             <button id="acessar" class="btn-acao">Verificar Acesso</button>
 
             <p id="resultado" class="resultado"></p>
+        </section>
+
+        <!-- QUESTÃO 07 -->
+        <section id="q7" class="card-questao">
+            <h1>Questão 07 - Classificação de Consumo de Energia</h1>
+            
+            <div class="campo">
+                <label for="consumo">Consumo Mensal (kWh):</label>
+                <input id="consumo" type="number" min="0" max="5000" placeholder="Ex: 150">
+            </div>
+
+            <button id="classificar" class="btn-acao">Classificar Consumo</button>
+
+            <p id="resultado" class="resultado"></p>
+        </section>
+
+        <!-- QUESTÃO 08 -->
+        <section id="q8" class="card-questao">
+            <h1>Questão 08 - Validação de Senha</h1>
+            
+            <div class="campo">
+                <label for="senha">Digite a Senha (mínimo 8 caracteres):</label>
+                <div style="display: flex; gap: 8px;">
+                    <input id="senha" type="password" placeholder="Digite sua senha">
+                    <button id="btnToggleSenha" type="button" style="padding: 0 15px; cursor: pointer; white-space: nowrap; border: 1px solid #ccc; border-radius: 4px; background: #eee;">Mostrar</button>
+                </div>
+            </div>
+
+            <button id="validar" class="btn-acao">Validar Senha</button>
+
+            <p id="resultado" class="resultado"></p>
+        </section>
+
+        <!-- QUESTÃO 09 -->
+        <section id="q9" class="card-questao">
+            <h1>Questão 09 - Cálculo de Frete</h1>
+            
+            <div class="campo">
+                <label for="compra">Valor da Compra (R$):</label>
+                <input id="compra" type="number" step="0.01" min="0" placeholder="Ex: 180.00">
+            </div>
+
+            <button id="frete" class="btn-acao">Calcular</button>
+
+            <p id="resultado" class="resultado"></p>
+        </section>
+
+        <!-- QUESTÃO 10 -->
+        <section id="q10" class="card-questao">
+            <h1>Questão 10 - Conversão de Temperatura</h1>
+            
+            <div class="campo">
+                <label for="celsius">Temperatura em Celsius (°C):</label>
+                <input id="celsius" type="number" step="0.1" min="-100" max="100" placeholder="Ex: 31">
+            </div>
+
+            <button id="converter" class="btn-acao">Converter</button>
+
+            <p id="resultado" class="resultado"></p>
+        </section>
+
+        <!-- QUESTÃO 11 -->
+        <section id="q11" class="card-questao">
+            <h1>Questão 11 - Controle de Estoque</h1>
+            
+            <div class="campo">
+                <label for="estoque">Quantidade em Estoque:</label>
+                <input id="estoque" type="number" min="0" max="100000" placeholder="Ex: 8">
+            </div>
+
+            <button id="verificar" class="btn-acao">Verificar Estoque</button>
+
+            <div id="resultado" class="resultado"></div>
+        </section>
+
+        <!-- QUESTÃO 12 -->
+        <section id="q12" class="card-questao">
+            <h1>Questão 12 - Votação Eletrônica</h1>
+            
+            <div class="campo">
+                <label for="idade">Idade do Eleitor (0 a 120 anos):</label>
+                <input id="idade" type="number" min="0" max="120" placeholder="Ex: 18">
+            </div>
+
+            <button id="participar" class="btn-acao">Verificar</button>
+
+            <p id="resultado" class="resultado"></p>
+        </section>
+
+        <!-- QUESTÃO 13 -->
+        <section id="q13" class="card-questao">
+            <h1>Questão 13 - Avaliação do Cliente</h1>
+            
+            <div class="campo">
+                <label for="nota">Nota do Cliente (1 a 5):</label>
+                <input id="nota" type="number" min="1" max="5" placeholder="Digite uma nota de 1 a 5">
+            </div>
+
+            <button id="avaliar" class="btn-acao">Enviar Avaliação</button>
+
+            <p id="resultado" class="resultado"></p>
+        </section>
+
+        <!-- QUESTÃO 14 -->
+        <section id="q14" class="card-questao">
+            <h1>Questão 14 - Cálculo Salarial com Desconto</h1>
+            <div class="campo">
+                <label for="salario">Salário Bruto (R$):</label>
+                <input id="salario" type="number" step="0.01" min="0" placeholder="Ex: 3000.00">
+            </div>
+            <button id="calcular" class="btn-acao">Calcular Salário</button>
+            <p id="resultado" class="resultado"></p>
+        </section>
+
+        <!-- QUESTÃO 15 -->
+        <section id="q15" class="card-questao">
+            <h1>Questão 15 - Monitoramento de Velocidade</h1>
+            <div class="campo">
+                <label for="velocidade">Velocidade (km/h):</label>
+                <input id="velocidade" type="number" min="0" max="300" placeholder="Ex: 65">
+            </div>
+            <button id="verificar" class="btn-acao">Verificar Velocidade</button>
+            <p id="resultado" class="resultado"></p>
+        </section>
+
+        <!-- QUESTÃO 16 -->
+        <section id="q16" class="card-questao">
+            <h1>Questão 16 - Verificação de Frequência Escolar</h1>
+            <div class="campo">
+                <label for="frequencia">Frequência (%):</label>
+                <input id="frequencia" type="number" min="0" max="100" placeholder="Ex: 80">
+            </div>
+            <button id="verificar" class="btn-acao">Verificar Frequência</button>
+            <p id="resultado" class="resultado"></p>
+        </section>
+
+        <!-- QUESTÃO 17 -->
+        <section id="q17" class="card-questao">
+            <h1>Questão 17 - Classificação de Pontuação</h1>
+            <div class="campo">
+                <label for="pontuacao">Pontuação (0 a 100):</label>
+                <input id="pontuacao" type="number" min="0" max="100" placeholder="Ex: 75">
+            </div>
+            <button id="classificar" class="btn-acao">Classificar</button>
+            <p id="resultado" class="resultado"></p>
+        </section>
+
+        <!-- QUESTÃO 18 -->
+        <section id="q18" class="card-questao">
+            <h1>Questão 18 - Validação de Campo Obrigatório</h1>
+            <div class="campo">
+                <label for="nome">Nome Completo:</label>
+                <input id="nome" type="text" placeholder="Digite seu nome">
+            </div>
+            <button id="enviar" class="btn-acao">Enviar</button>
+            <p id="mensagem" class="resultado"></p>
+        </section>
+
+        <!-- QUESTÃO 19 -->
+        <section id="q19" class="card-questao">
+            <h1>Questão 19 - Cálculo de Idade e Maioridade</h1>
+            <div class="campo">
+                <label for="anoNascimento">Ano de Nascimento:</label>
+                <input id="anoNascimento" type="number" min="1900" max="2026" placeholder="Ex: 2005">
+            </div>
+            <button id="calcular" class="btn-acao">Calcular Idade</button>
+            <p id="resultado" class="resultado"></p>
+        </section>
+
+        <!-- QUESTÃO 20 -->
+        <section id="q20" class="card-questao">
+            <h1>Questão 20 - Semáforo Virtual</h1>
+            <div style="display: flex; gap: 10px; margin-bottom: 15px;">
+                <button id="vermelho" class="btn-acao" style="background-color: #c0392b;">Vermelho</button>
+                <button id="amarelo" class="btn-acao" style="background-color: #f39c12;">Amarelo</button>
+                <button id="verde" class="btn-acao" style="background-color: #27ae60;">Verde</button>
+            </div>
+            <p id="orientacao" class="resultado"></p>
+        </section>
+
+        <!-- QUESTÃO 21 -->
+        <section id="q21" class="card-questao">
+            <h1>Questão 21 - Alternador de Tema</h1>
+            <button id="tema" class="btn-acao">Alterar Tema</button>
+            <div id="pagina" style="margin-top: 15px; padding: 20px; border-radius: 8px; border: 1px solid #ccc;">
+                <h3>Conteúdo da página</h3>
+                <p>Este painel pode alternar entre o modo claro e o modo escuro.</p>
+            </div>
+        </section>
+
+        <!-- QUESTÃO 22 -->
+        <section id="q22" class="card-questao">
+            <h1>Questão 22 - Saudação por Período do Dia</h1>
+            <div class="campo">
+                <label for="periodo">Selecione o Período:</label>
+                <select id="periodo" style="padding: 8px; border-radius: 4px; border: 1px solid #ccc; width: 100%;">
+                    <option value="manha">Manhã</option>
+                    <option value="tarde">Tarde</option>
+                    <option value="noite">Noite</option>
+                </select>
+            </div>
+            <button id="mensagem" class="btn-acao">Exibir Mensagem</button>
+            <p id="resultado" class="resultado"></p>
+        </section>
+
+        <!-- QUESTÃO 23 -->
+        <section id="q23" class="card-questao">
+            <h1>Questão 23 - Cálculo de IMC</h1>
+            <div class="campo">
+                <label for="peso">Peso (kg):</label>
+                <input id="peso" type="number" step="0.1" min="0" max="300" placeholder="Ex: 70.5">
+            </div>
+            <div class="campo">
+                <label for="altura">Altura (m):</label>
+                <input id="altura" type="number" step="0.01" min="0" max="2.5" placeholder="Ex: 1.75">
+            </div>
+            <button id="calcular" class="btn-acao">Calcular IMC</button>
+            <p id="resultado" class="resultado"></p>
+        </section>
+
+        <!-- QUESTÃO 24 -->
+        <section id="q24" class="card-questao">
+            <h1>Questão 24 - Horário da Biblioteca</h1>
+            <div class="campo">
+                <label for="horario">Horário Atual (0 às 23h):</label>
+                <input id="horario" type="number" min="0" max="23" placeholder="Ex: 14">
+            </div>
+            <button id="verificar" class="btn-acao">Verificar Horário</button>
+            <p id="resultado" class="resultado"></p>
+        </section>
+
+        <!-- QUESTÃO 25 -->
+        <section id="q25" class="card-questao">
+            <h1>Questão 25 - Média e Situação Escolar</h1>
+            <div class="campo">
+                <label for="media">Média do Aluno (0 a 10):</label>
+                <input id="media" type="number" step="0.1" min="0" max="10" placeholder="Ex: 6.5">
+            </div>
+            <button id="verificar" class="btn-acao">Verificar</button>
+            <p id="resultado" class="resultado"></p>
+        </section>
+
+        <!-- QUESTÃO 26 -->
+        <section id="q26" class="card-questao">
+            <h1>Questão 26 - Total da Compra e Frete</h1>
+            <div class="campo">
+                <label for="preco">Preço Unitário (R$):</label>
+                <input id="preco" type="number" step="0.01" min="0" placeholder="Ex: 50.00">
+            </div>
+            <div class="campo">
+                <label for="quantidade">Quantidade:</label>
+                <input id="quantidade" type="number" min="1" placeholder="Ex: 6">
+            </div>
+            <button id="calcular" class="btn-acao">Calcular Total</button>
+            <p id="resultado" class="resultado"></p>
+        </section>
+
+        <!-- QUESTÃO 27 -->
+        <section id="q27" class="card-questao">
+            <h1>Questão 27 - Nível de Bateria</h1>
+            <div class="campo">
+                <label for="bateria">Nível de Bateria (%):</label>
+                <input id="bateria" type="number" min="0" max="100" placeholder="Ex: 45">
+            </div>
+            <button id="verificar" class="btn-acao">Verificar Bateria</button>
+            <div id="resultado" class="resultado"></div>
+        </section>
+
+        <!-- QUESTÃO 28 -->
+        <section id="q28" class="card-questao">
+            <h1>Questão 28 - Formulário de Inscrição</h1>
+            <div class="campo">
+                <label for="nome">Nome:</label>
+                <input id="nome" type="text" placeholder="Digite seu nome">
+            </div>
+            <div class="campo">
+                <label for="email">E-mail:</label>
+                <input id="email" type="email" placeholder="Digite seu e-mail">
+            </div>
+            <button id="cadastrar" class="btn-acao">Cadastrar</button>
+            <p id="resultado" class="resultado"></p>
+        </section>
+
+        <!-- QUESTÃO 29 -->
+        <section id="q29" class="card-questao">
+            <h1>Questão 29 - Classificação de Estoque</h1>
+            <div class="campo">
+                <label for="quantidade">Quantidade em Estoque:</label>
+                <input id="quantidade" type="number" min="0" placeholder="Ex: 3">
+            </div>
+            <button id="classificar" class="btn-acao">Classificar Produto</button>
+            <h3 id="resultado" class="resultado"></h3>
+        </section>
+
+        <!-- QUESTÃO 30 -->
+        <section id="q30" class="card-questao">
+            <h1>Questão 30 - Análise Inicial de Crédito</h1>
+            <div class="campo">
+                <label for="renda">Renda Mensal (R$):</label>
+                <input id="renda" type="number" step="0.01" min="0" placeholder="Ex: 3500.00">
+            </div>
+            <button id="analisar" class="btn-acao">Analisar Crédito</button>
+            <div id="resultado" class="resultado"></div>
         </section>
 
     </main>
