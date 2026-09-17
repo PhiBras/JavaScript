@@ -896,7 +896,7 @@ const exercises = [
   },
   {
     id: 42,
-    title: "Ex 42: Ordenação Simples (Bubble Sort)",
+    title: "Ex 42: Ordenação Simples",
     desc: "Ordena números em ordem crescente sem utilizar `.sort()` via laços aninhados.",
     inputs: [{ name: "nums", label: "Números para ordenar (separados por vírgula):", type: "text" }],
     run: (i) => {
