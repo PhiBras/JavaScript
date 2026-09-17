@@ -979,7 +979,7 @@ const exercises = [
   },
   {
     id: 45,
-    title: "Ex 45: Arrays Paralelos (Carrinho)",
+    title: "Ex 45: Arrays Paralelos",
     desc: "Integra vetor de Nomes de Produtos com vetor de Preços na mesma posição.",
     inputs: [
       { name: "prods", label: "Nomes dos Produtos (ex: Arroz, Feijão, Leite):", type: "text" },
@@ -1096,7 +1096,7 @@ const exercises = [
   },
   {
     id: 49,
-    title: "Ex 49: Matriz de Consumo (Arrays Aninhados)",
+    title: "Ex 49: Matriz de Consumo",
     desc: "Analisa matriz 3x5 (3 Setores x 5 Dias), calculando totais de cada dimensão e pico absoluto.",
     inputs: [
       { name: "s1", label: "5 Consumos Setor A (separados por vírgula):", type: "text" },
