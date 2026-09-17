@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Painel Prático de Exercícios JavaScript (1 a 50)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="light-theme">
+  <div class="app-container">
+    <!-- Barra Lateral com Botões -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h2>Exercícios JS</h2>
+        <button id="theme-toggle-btn" class="theme-btn">🌙 Tema Escuro</button>
+      </div>
+      <nav class="exercise-nav" id="exercise-nav">
+        <!-- Gerado via JavaScript -->
+      </nav>
+    </aside>
+
+    <!-- Área Principal de Exibição e Testes -->
+    <main class="main-content">
+      <header class="content-header">
+        <h1 id="exercise-title">Selecione um exercício</h1>
+      </header>
+      
+      <section class="exercise-body">
+        <div id="exercise-description" class="description-box">
+          Escolha uma questão no menu lateral para visualizar a situação-problema e executar a solução em JavaScript.
+        </div>
+        
+        <div class="interactive-panel">
+          <h3>Painel de Testes</h3>
+          <div id="input-container" class="input-group"></div>
+          <button id="run-btn" class="run-btn">Executar Solução</button>
+          <div class="output-box">
+            <h4>Resultado / Console:</h4>
+            <pre id="output-display">Aguardando execução...</pre>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
